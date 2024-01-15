@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính TLT</title>
+</head>
+<body>
+    <table>
+        <tr>
+          <td colspan="2">
+            <h1 style="color: red;">Tính TLT Liên Quân</h1>
+          </td>
+        </tr>
+            <tr>
+          <td colspan="2">
+            <a href="https://www.facebook.com/siuiuNana" target="_blank"><span style="color:darkgreen"><b>Liên hệ qua Facebook</b></span></a>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tỉ lệ thắng hiện tại:
+          </td>
+          <td>
+            <input type="text" placeholder="VD: 99.9" id="win_now" autocomplete="off"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tỉ lệ thắng mong muốn:
+          </td>
+          <td>
+            <input type="text" placeholder="VD: 100" id="win_need" autocomplete="off"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tổng trận đã chơi:
+          </td>
+          <td>
+            <input type="text" placeholder="VD: 9999" id="n" autocomplete="off"/>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center">
+            <br/>
+            <input type="button" value="Xem kết quả" onclick="javascript:calculate()">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div id="output">&nbsp;</div>
+          </td>
+        </tr>
+      </table>
+      <script src="mycode.js"></script>
+</body>
+</html>
