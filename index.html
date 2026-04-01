@@ -1,23 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <link rel="stylesheet" href="mystyle.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tính TLT</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tính Tỉ Lệ Thắng Liên Quân</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="mystyle.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Tính TLT Liên Quân</h1>
-        <a href="https://www.facebook.com/hetcuuae" target="_blank">Liên hệ qua Facebook</a>
-        <br><br>
-        <input type="text" placeholder="Tỉ lệ thắng hiện tại (VD: 99.9)" id="win_now" autocomplete="off">
-        <input type="text" placeholder="Tỉ lệ thắng mong muốn (VD: 100)" id="win_need" autocomplete="off">
-        <input type="text" placeholder="Tổng trận đã chơi (VD: 9999)" id="n" autocomplete="off">
-        <input type="button" value="Xem kết quả" onclick="calculate()" style="width: 100%;">
-        <div id="output">&nbsp;</div>
-    </div>
-    <script src="myscript.js"></script>
+  <main class="page">
+    <section class="calculator-card">
+      <div class="card-top">
+        <span class="eyebrow">Web Tool</span>
+        <h1>Tính Tỉ Lệ Thắng Liên Quân</h1>
+        <p class="description">
+          Nhập tỉ lệ thắng hiện tại, tỉ lệ thắng mong muốn và tổng số trận đã chơi
+          để tính số trận cần thắng hoặc thua liên tiếp.
+        </p>
+      </div>
+
+      <div class="form-grid">
+        <div class="input-group">
+          <label for="win_now">Tỉ lệ thắng hiện tại (%)</label>
+          <input
+            type="text"
+            id="win_now"
+            placeholder="Ví dụ: 54.7"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="win_need">Tỉ lệ thắng mong muốn (%)</label>
+          <input
+            type="text"
+            id="win_need"
+            placeholder="Ví dụ: 60"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="input-group full-width">
+          <label for="n">Tổng số trận đã chơi</label>
+          <input
+            type="text"
+            id="n"
+            placeholder="Ví dụ: 1200"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+
+      <div class="action-row">
+        <button id="calcButton" type="button" class="btn btn-primary">
+          Tính kết quả
+        </button>
+        <button id="resetButton" type="button" class="btn btn-secondary">
+          Làm mới
+        </button>
+      </div>
+
+      <div id="output" class="result-box result-empty">
+        Kết quả sẽ hiển thị tại đây.
+      </div>
+    </section>
+  </main>
+
+  <script src="myscript.js"></script>
 </body>
 </html>
